@@ -36,22 +36,3 @@
         transform: translateX(-100%);
     }
 }
-
-/* #blur_left{
-    height: 100%;
-    width: 20%;
-    background: linear-gradient( to left, transparent, #111);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-#blur_right{
-    height: 100%;
-    width: 20%;
-    background-color: red;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-} */

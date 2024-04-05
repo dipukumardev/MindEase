@@ -12,6 +12,7 @@ body,html{
 :root{
   --landing_page_background:rgba(45,87,77,255);
   --landing_page_button_bgcolor:#c0f196;
+  --box_bgc_color:rgba(195,244,153,255);
 }
 #Main{
   width: 100vw;
@@ -258,8 +259,55 @@ button:hover svg {
 #Area_of_Expertise{
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
 }
+#sub_boxes{
+  width: 100%;
+  height: 85vh;
+  margin-top: 15.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#sub_boxes h1{
+font-size: 40px;
+margin-bottom: 3.5vh;
+
+}
+.box1{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4vh;
+
+}
+
+.elem_box{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+}
+.elem_box:hover{
+ background-image: url(/1st.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.elem_box a{
+  font-size: 35px;
+  color: black;
+}
+
+
 
 /* Case Study code  */
 #Case_Study{
