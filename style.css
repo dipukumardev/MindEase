@@ -11,6 +11,7 @@ body,html{
 }
 :root{
   --landing_page_background:rgba(45,87,77,255);
+  --landing_page_button_bgcolor:#c0f196;
 }
 #Main{
   width: 100vw;
@@ -78,6 +79,20 @@ nav ul li a{
 #text h4{
   font-size: 12vw;
 }
+
+/* image box code */
+#img{
+  width: 50%;
+  height: 93%;
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+}
+#img img{
+  width: 100%;
+  height: 100%;
+}
+
 /* text buttton */
 .button {
   width: 150px;
@@ -87,9 +102,9 @@ nav ul li a{
   justify-content: flex-start;
   gap: 12px;
   padding: 0px 15px;
-  background-color: rgb(66, 66, 66);
+  background-color: var(--landing_page_button_bgcolor);
   border-radius: 10px;
-  color: white;
+  color: black;
   border: none;
   position: relative;
   cursor: pointer;
@@ -109,8 +124,12 @@ nav ul li a{
 }
 
 .button:hover {
-  background-color: rgb(77, 77, 77);
+  background-color: var(--landing_page_background);
   transition-duration: .2s;
+ border-top: 2px solid white;
+ border-left: 2px solid white;
+ border-right: 2px solid white;
+ color: white;
 }
 
 .button:hover .arrow {

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#moving_elem {
+    position: absolute;
+    width: 60%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 44%;
+    left: 30%;
+}
+
+#moving_elem .move {
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving_elem .move img {
+    height: 2vw;
+    margin: 0 1vw;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* #blur_left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient( to left, transparent, #111);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#blur_right{
+    height: 100%;
+    width: 20%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+} */
