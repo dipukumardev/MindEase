@@ -410,7 +410,7 @@ margin-bottom: 3.5vh;
   width: 100%;
   height: 70%;
   background-color: var(--landing_page_background);
-  margin-top: 3vh;
+  margin-top: 12vh;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -576,6 +576,9 @@ margin-bottom: 3.5vh;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+.case_part p{
+  margin-left: 12px;
+}
 .case_part button{
   border: 1px solid black;
   width: 80px;
@@ -590,4 +593,27 @@ margin-bottom: 3.5vh;
   height: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+/* forth section code  (mind) */
+#Tranid_mind{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+
+/* devloper section */
+#About{
+  width: 100%;
+  height: 60%;
+  border: 1px solid yellow;
+}
+
+
+/* footer section  */
+footer{
+  width: 100%;
+  height: 40%;
+  background-color: var(--landing_page_background);
 }
