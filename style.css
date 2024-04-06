@@ -552,20 +552,42 @@ margin-bottom: 3.5vh;
   margin-top: 10%;
   display: flex;
   gap: 2vw;
+  border-radius: 13px;
 }
 .case_image1{
   width: 25%;
-  height: 100;
+  height: 80;
   border: 1px solid black;
   margin-left: 4vh;
   margin-right: 4vh;
+  border-radius: 12px;
 }
 .case_1{
   width: 100%;
-  height: 70%;
-  border: 1px solid green;
+  height: 80%;
 }
+.case_part{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  background-color: var(--landing_page_background);
+  backdrop-filter: 10px blue;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.case_part button{
+  border: 1px solid black;
+  width: 80px;
+ height: inherit;
+  margin-right: 12px;
+  border-radius: 12px;
+  background-color: var(--landing_page_button_bgcolor);
+}
+
 .case_1 img{
   width: 100%;
   height: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
