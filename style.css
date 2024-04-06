@@ -283,9 +283,11 @@ margin-bottom: 3.5vh;
   justify-content: center;
   flex-wrap: wrap;
   gap: 4vh;
-
 }
-
+.box1 a{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
 .elem_box{
   width: 30%;
   height: 30%;
@@ -295,23 +297,275 @@ margin-bottom: 3.5vh;
   justify-content: center;
   background-color: var(--box_bgc_color);
   transition: 2s ease-in-out;
+  cursor: pointer;
 }
-.elem_box:hover{
- background-image: url(/1st.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/* .image_elem{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
+} */
+
+.elem_box1{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
 }
-.elem_box a{
+
+.elem_box2{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.elem_box3{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.elem_box4{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.elem_box5{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.elem_box6{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.elem_box7{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.elem_box8{
+  width: 30%;
+  height: 30%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box_bgc_color);
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+
+
+/* .elem_box a{
   font-size: 35px;
   color: black;
-}
+} */
 
 
 
 /* Case Study code  */
 #Case_Study{
   width: 100%;
+  height: 70%;
+  background-color: var(--landing_page_background);
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+.first_box{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.first_box h2{
+  color: white;
+  font-size: 35px;
+  margin-left: 4vw;
+}
+.btn-conteiner{
+  margin-right: 4vw;
+}
+
+/*  case study button */
+.btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-background: transparent;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--landing_page_button_bgcolor);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+  border: 2px solid black;
+}
+
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+
+
+/*  case study image box */
+.second_box{
+  width: 90%;
+  height: 70%;
+  margin: 0vh 0vh 5% 5%;
+  margin-top: 10%;
+  display: flex;
+  gap: 2vw;
+}
+.case_image1{
+  width: 25%;
+  height: 100;
+  border: 1px solid black;
+  margin-left: 4vh;
+  margin-right: 4vh;
+}
+.case_1{
+  width: 100%;
+  height: 70%;
+  border: 1px solid green;
+}
+.case_1 img{
+  width: 100%;
   height: 100%;
-  border: 1px solid yellow;
 }
