@@ -294,22 +294,8 @@ button:hover svg {
 #sub_boxes h1 {
   font-size: 40px;
   margin-bottom: 3.5vh;
-
-}
-
-.box1 {
-  width: 100%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 4vh;
-}
-
-.box1 a {
-  color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
 }
 
 .container {
@@ -320,7 +306,6 @@ button:hover svg {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
-
 }
 
 .box {
@@ -333,21 +318,40 @@ button:hover svg {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.8vw;
+  font-size: 2.2vw;
   border-radius: 0.7rem;
   margin-bottom: 20px;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--bg-image);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover::after {
+  opacity: 0.5;
+
 }
 
 .box:hover {
   transform: scale(1.1);
-}
-
-@media (width: 600px) {
-  .box {
-    height: auto;
-    margin: 0;
-  }
+  color: rgb(0, 0, 0);
 }
 
 /* .elem_box a{
@@ -385,10 +389,12 @@ button:hover svg {
 .first_box h2 {
   color: white;
   font-size: 3.7vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
 
 }
 
-.btn-conteiner {}
+/* .btn-conteiner {} */
 
 /*  case study button */
 .btn-conteiner {
@@ -568,6 +574,7 @@ button:hover svg {
   text-wrap: wrap;
   font-weight: 700;
 }
+
 /* Cool button hover effect */
 .case_part button {
   width: 20%;
@@ -632,7 +639,7 @@ button:hover svg {
 }
 
 /* Responsive styles */
-@media only screen and (max-width: 768px) {
+@media (width: 768px) {
   .second_box {
     width: 100%;
     /* Adjust width for smaller screens */
@@ -655,8 +662,153 @@ button:hover svg {
 /* forth section code  (mind) */
 #Tranid_mind {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
+  background-color: var(--landing_page_background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  background-color: #c3f499;
+  color: black;
 }
+
+/* #Tranid_mind  .case_image1 {
+
+} */
+
+
+#Tranid_mind .case_image1 {
+  width: 30%;
+  height: 80%;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+
+}
+
+#Tranid_mind .case_1 {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border: none;
+  /* Remove borders around image */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#Tranid_mind .case_1 img {
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+
+
+#Tranid_mind .case_part {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  background-color: var(--landing_page_background);
+  background-color: #486d65;
+  position: relative;
+  z-index: 12;
+  top: -25px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .3s ease-in-out;
+
+}
+
+#Tranid_mind .case_part p {
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2vw;
+  width: 80%;
+  text-wrap: wrap;
+  font-weight: 700;
+}
+
+/* Cool button hover effect */
+#Tranid_mind .case_part button {
+  width: 20%;
+  height: 80%;
+  border-radius: 2vw;
+  background-color: var(--landing_page_button_bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px #4b7837;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Adding transition */
+}
+
+#Tranid_mind .case_part button:hover {
+  transform: translateY(-3px);
+  /* Move the button up slightly on hover */
+  box-shadow: 0 6px 12px #4b7837;
+  /* Add a more pronounced shadow on hover */
+}
+
+#Tranid_mind .case_part button a {
+  display: block;
+  position: relative;
+  margin-top: 0px;
+  font-size: 30px;
+  color: #4b7837;
+}
+
+/* Adjusting text color on button hover */
+#Tranid_mind .case_part button:hover a {
+  color: #000000;
+  /* Change text color to white on hover for better visibility */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PROJECT SECTION */
 #project {
