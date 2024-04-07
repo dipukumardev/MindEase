@@ -65,6 +65,8 @@ nav ul {
   display: flex;
   gap: 12px;
   text-transform: capitalize;
+  position: absolute;
+  left: 30%;
 }
 
 nav ul li a {
@@ -109,7 +111,7 @@ nav ul li a {
 
 /* text buttton */
 .button {
-  width: 150px;
+  width: 200px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -123,6 +125,7 @@ nav ul li a {
   position: relative;
   cursor: pointer;
   transition-duration: .2s;
+  left: 0;
 }
 
 
@@ -674,9 +677,11 @@ button a {
   transition: 1s ease-in-out;
   cursor: pointer;
 }
-.card:hover{
+
+.card:hover {
   background-color: var(--landing_page_background);
 }
+
 .card .img_container {
   width: 8em;
   height: 8em;
