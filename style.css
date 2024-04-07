@@ -43,34 +43,98 @@ html {
   position: relative;
 }
 
-/* nav section code */
 nav {
-  width: 95%;
-  height: 10vh;
-  background-color: var(--landing_page_background);
+  height: 10%;
+  width: 100%;
+  display: flex;
   position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+#nav_bar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  position: relative;
+  padding: 12px 20px;
+}
+nav .btn-conteiner{
   position: absolute;
-  top: 0;
+  right: 10%;
 }
 
-.logo a {
+#logo a {
   color: white;
-  font-size: 20px;
+  /* font-size: 30px; */
+  position: absolute;
+  left: 10%;
+  top: 35%;
 }
 
-nav ul {
+#menu {
   display: flex;
-  gap: 12px;
-  text-transform: capitalize;
-  position: absolute;
-  left: 30%;
+  justify-content: space-between;
+ position: fixed;
+  right: 60vh;
 }
 
-nav ul li a {
-  color: white;
+#menu li {
+  padding-left: 30px;
+}
+
+#menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white ;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  transition: 0.15s ease-in-out;
+}
+
+#menu li a:hover:after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20%;
+  right: 20px;
+}
+
+#check {
+  display: none;
 }
 
 /* text code here */
@@ -419,6 +483,9 @@ button:hover svg {
   border-radius: 100px;
   box-shadow: 0 0 0.2em 0 var(--color-background);
   border: 2px solid black;
+}
+nav .btn-content{
+  border: none;
 }
 
 .btn-content:hover,
@@ -875,6 +942,10 @@ button:hover svg {
 button a {
   color: black;
   font-size: 20px;
+}
+
+.first_box .casestudyHeader h2 {
+  color: black;
 }
 
 /* devloper section */
