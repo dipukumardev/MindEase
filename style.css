@@ -357,38 +357,38 @@ button:hover svg {
 
 
 
+
 /* Case Study code  */
 #Case_Study {
   width: 100%;
-  height: 70%;
+  height: 90vh;
   background-color: var(--landing_page_background);
-  margin-top: 12vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: start;
-  position: relative;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
 .first_box {
-  width: 100%;
+  width: 85%;
   height: 20%;
-  position: absolute;
-  left: 0;
-  top: 1vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+
 }
 
 .first_box h2 {
   color: white;
-  font-size: 35px;
-  margin-left: 4vw;
+  font-size: 3.7vw;
+
 }
 
-.btn-conteiner {
-  margin-right: 4vw;
-}
+.btn-conteiner {}
 
 /*  case study button */
 .btn-conteiner {
@@ -502,27 +502,40 @@ button:hover svg {
 
 /*  case study image box */
 .second_box {
-  width: 90%;
-  height: 70%;
-  margin: 0vh 0vh 5% 5%;
-  margin-top: 10%;
+  width: 85%;
+  height: 80%;
   display: flex;
-  gap: 2vw;
   border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+
 }
 
 .case_image1 {
-  width: 25%;
-  height: 80;
-  border: 1px solid black;
-  margin-left: 4vh;
-  margin-right: 4vh;
+  width: 30%;
+  height: 80%;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+
 }
 
 .case_1 {
   width: 100%;
   height: 80%;
+  object-fit: cover;
+  border: none;
+  /* Remove borders around image */
+  position: relative;
+  z-index: 1;
 }
 
 .case_part {
@@ -531,22 +544,67 @@ button:hover svg {
   display: flex;
   align-items: center;
   background-color: var(--landing_page_background);
-  backdrop-filter: 10px blue;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  background-color: #486d65;
+  position: relative;
+  z-index: 12;
+  top: -25px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .3s ease-in-out;
+
 }
 
 .case_part p {
-  margin-left: 12px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.2vw;
+  width: 80%;
+  text-wrap: wrap;
+  font-weight: 700;
+}
+/* Cool button hover effect */
+.case_part button {
+  width: 20%;
+  height: 80%;
+  border-radius: 2vw;
+  background-color: var(--landing_page_button_bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px #4b7837;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Adding transition */
 }
 
-.case_part button {
-  border: 1px solid black;
-  width: 80px;
-  height: inherit;
-  margin-right: 12px;
-  border-radius: 12px;
-  background-color: var(--landing_page_button_bgcolor);
+.case_part button:hover {
+  transform: translateY(-3px);
+  /* Move the button up slightly on hover */
+  box-shadow: 0 6px 12px #4b7837;
+  /* Add a more pronounced shadow on hover */
+}
+
+.case_part button a {
+  display: block;
+  position: relative;
+  top: 60%;
+  font-size: 30px;
+  color: #4b7837;
+}
+
+/* Adjusting text color on button hover */
+.case_part button:hover a {
+  color: #000000;
+  /* Change text color to white on hover for better visibility */
 }
 
 .case_1 img {
@@ -555,6 +613,44 @@ button:hover svg {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+
+
+
+/* Card animations */
+.case_image1 {
+  transition: transform 0.3s ease;
+  /* Adding transition */
+}
+
+.case_image1:hover {
+  transform: translateY(-10px);
+  /* Adjust the hover animation as needed */
+}
+
+.case_part:hover {
+  scale: 1;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .second_box {
+    width: 100%;
+    /* Adjust width for smaller screens */
+    flex-direction: column;
+    /* Stack cards vertically on smaller screens */
+    align-items: center;
+    /* Center cards on smaller screens */
+  }
+
+  .case_image1 {
+    width: 80%;
+    /* Adjust width of cards for smaller screens */
+    margin-bottom: 20px;
+    /* Add some space between cards on smaller screens */
+  }
+}
+
+
 
 /* forth section code  (mind) */
 #Tranid_mind {
